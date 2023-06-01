@@ -10,14 +10,27 @@
 
 #root {
   width: 1440px;
+  min-height: 100vh;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
+  background-color: rgb(42, 45, 51);
 }
 
 .editorContainer {
   width: 100%;
-  background-color: red;
-  height: 100vh;
+  height: 600px;
   display: flex;
+}
+
+.optionsContainer {
+  min-height: calc(100vh - 600px);
+  width: 100%;
+  background-color: #ebebee;
+}
+
+.codeEditorContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }

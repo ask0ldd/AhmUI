@@ -2,6 +2,7 @@ import './App.css'
 import CodePreview from './components/CodePreview'
 import CodeEditor from './components/CodeEditor'
 import{ useState } from 'react'
+import TabCodeEditor from './components/TabCodeEditor'
 
 function App() {
 
@@ -10,8 +11,14 @@ function App() {
   return (
     <>
       <section className="editorContainer">
-        <CodePreview/>
-        <CodeEditor setCode={setCode}/>
+        <CodePreview codeToRender={code}/>
+        <div className='codeEditorContainer'>
+          <TabCodeEditor/>
+          <CodeEditor setCodeToRender={setCode}/>
+        </div>
+      </section>
+      <section className='optionsContainer'>
+
       </section>
     </>
   )

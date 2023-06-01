@@ -1,6 +1,5 @@
 .previewContainer {
   width: 50%;
-  height: 50vh;
-  background-color: #373b44;
-  color: #5f6572;
+  height: 100%;
+  background-color: #fff;
 }
