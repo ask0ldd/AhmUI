@@ -20,3 +20,7 @@
 .tabContainer span:hover {
   background-color: rgb(224, 224, 224);
 }
+
+.tabContainer span:first-of-type {
+  background-color: rgb(224, 224, 224);
+}

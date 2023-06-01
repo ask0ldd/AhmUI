@@ -15,6 +15,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   background-color: rgb(42, 45, 51);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
 }
 
 .editorContainer {
@@ -24,13 +25,31 @@
 }
 
 .optionsContainer {
+  padding: 2rem 4rem;
   min-height: calc(100vh - 600px);
   width: 100%;
   background-color: #ebebee;
+  border-top: 2px solid white;
 }
 
 .codeEditorContainer {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+
+.inputsGroup {
+  display: flex;
+  column-gap: 1rem;
+  width: 100%;
+  /*padding: 1rem 0rem;*/
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.inputsGroup input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
 }
